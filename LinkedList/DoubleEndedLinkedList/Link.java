@@ -6,7 +6,7 @@ public class Link {
 
     Link(int value){
         this.value = value;
-        next =null;
+        next = null;
     }
 
 }
