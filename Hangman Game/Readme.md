@@ -30,9 +30,9 @@ The class utilizes the Scanner class to read input from the user.
 <li>Console output formatting</li>
 <li>Basic game design and logic</li>
 </ul>
-
-These skills were employed to create a functional Hangman game with:
+<br>
 <ol>
+These skills were employed to create a functional Hangman game with:
 <li>Different difficulty levels.</li>
 <li>Game statistics tracking.</li>
 <li>User interaction.</li>
