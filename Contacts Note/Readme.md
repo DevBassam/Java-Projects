@@ -6,10 +6,10 @@ The project consists of three Java classes: 'Contact', 'Note', and 'Main'.
 
 ## Contact Class
 The 'Contact' class represents a single contact and has the following attributes:
-- 'name': The name of the contact.
-- 'phoneNumber': The phone number of the contact.
-- 'email': The email address of the contact.
-- 'address': The address of the contact.
+- name: The name of the contact.
+- phoneNumber: The phone number of the contact.
+- email: The email address of the contact.
+- address: The address of the contact.
 
 The class provides getter and setter methods for each attribute.
 
@@ -23,11 +23,11 @@ It uses a 'HashMap' to store the contacts' data, with the contact ID serving as 
      and displaying all contacts.
 
 - Basic Operation Methods:
-  - 'addContact()': Prompts the user to enter contact details and adds the contact to the 'contacts' map.
-  - 'deleteContact(int id)': Deletes a contact with the given ID from the 'contacts' map.
-  - 'updateContact(int id)': Updates a contact with the given ID. It allows the user to choose which attribute(s) to update.
-  - 'showContacts()': Displays all the contacts stored in the 'contacts' map.
-  - 'showContactById(int id)': Displays the details of a contact with the given ID.
+  - addContact()': Prompts the user to enter contact details and adds the contact to the 'contacts' map.
+  - deleteContact(int id): Deletes a contact with the given ID from the 'contacts' map.
+  - updateContact(int id): Updates a contact with the given ID. It allows the user to choose which attribute(s) to update.
+  - showContacts(): Displays all the contacts stored in the 'contacts' map.
+  - showContactById(int id): Displays the details of a contact with the given ID.
 
 - Helpful Methods:
   - Various helper methods are used to obtain user input for contact details and operation choices.
