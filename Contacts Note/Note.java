@@ -9,15 +9,16 @@ public class Note {
     protected void openNote(){
         greeting();
         while (true){
-            int userChoice = getUserOperationChoice();
-            if (userChoice == 0) break;
+            String userChoice = getUserOperationChoice();
+            if (userChoice.equals("0")) break;
             input.nextLine(); // Consume the newline character stored in the buffer
             switch (userChoice){
-                case 1 -> addContact();
-                case 2 -> updateContact(getId());
-                case 3 -> deleteContact(getId());
-                case 4 -> showContactById(getId());
-                case 5 -> showContacts();
+                case "1" -> addContact();
+                case "2" -> updateContact(getId());
+                case "3" -> deleteContact(getId());
+                case "4" -> showContactById(getId());
+                case "5" -> showContacts();
+                default -> System.out.println("Not An Option, Choose Again");
             }
         }
     }
@@ -58,12 +59,12 @@ public class Note {
                 System.out.println("Contact to be updated....");
                 showContactById(id);
 
-                int choice = getUserChoiceForUpdate();
-                if (choice == 9) {
+                String choice = getUserChoiceForUpdate();
+                if (choice.equals("9")) {
                     id = 9;
                     continue;
                 }
-                else if (choice == 0){
+                else if (choice.equals("0")){
                     System.out.println("**** Operation Canceled ****");
                     break;
                 }
@@ -71,24 +72,26 @@ public class Note {
                 input.nextLine(); // Consume the newline character stored in the buffer
 
                 switch (choice){
-                    case 1:
+                    case "1":
                         updateContactName(id);
                         break;
-                    case 2:
+                    case "2":
                         updateContactPhone(id);
                         break;
-                    case 3:
+                    case "3":
                         updateContactEmail(id);
                         break;
-                    case 4:
+                    case "4":
                         updateContactAddress(id);
                         break;
-                    case 5:
+                    case "5":
                         updateContactName(id);
                         updateContactPhone(id);
                         updateContactEmail(id);
                         updateContactAddress(id);
                         break;
+                    default:
+                        System.out.println("Not An Option, Choose Again");
                 }
                 System.out.println("++++ Contact Updated Successfully ++++");
                 showContactById(id);
@@ -154,7 +157,7 @@ public class Note {
         System.out.print("Enter Address: ");
         return input.nextLine();
     }
-    private int getUserChoiceForUpdate(){
+    private String getUserChoiceForUpdate(){
         System.out.println("""
                 Enter your choice:
                 \t1- Update Name
@@ -164,7 +167,7 @@ public class Note {
                 \t5- Update All
                 \t0- Cancel
                 \t9- Enter anther ID""");
-        return input.nextInt();
+        return input.next();
     }
     private void updateContactName(int id){
         System.out.println("Enter New Name: ");
@@ -187,7 +190,7 @@ public class Note {
     private void greeting(){
         System.out.println("^^^^ Welcome to Contacts Note ^^^^");
     }
-    private int getUserOperationChoice(){
+    private String getUserOperationChoice(){
         System.out.println("""
                 1- Add New Contact.
                 2- Update Contact.
@@ -196,8 +199,8 @@ public class Note {
                 5- Show All Contacts.
                 0- Exit Contacts Note App.
                 """);
-        System.out.println("\tOperation Number...?");
-        return input.nextInt();
+        System.out.print("  Operation Number: ");
+        return input.next();
     }
 
 }
