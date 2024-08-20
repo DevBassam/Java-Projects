@@ -1,0 +1,4 @@
+main_course = Main Course
+sides = Sides
+main_course_items = {{"Pizza","4.5"},{"Pasta","2.5"},{"Burger","3.5"}}
+sides_items = {{"Fries","1.5"},{"Cola","0.5"},{"Water","1.0"}}
