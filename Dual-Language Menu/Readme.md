@@ -9,3 +9,11 @@ This Java application displays a menu in two different languages based on user s
 <li> Handles menu items with names and prices.</li>
 <li> Supports basic error handling and resource management.</li>
 </ul>
+
+## Output
+#### English Menu
+![1](https://github.com/user-attachments/assets/0a902da9-6e65-4983-b68f-c52e2de50480)
+#### Arabic Menu
+![2](https://github.com/user-attachments/assets/fe062e0d-0f3d-4e5e-93da-5e839b38c294)
+
+
