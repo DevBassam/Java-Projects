@@ -5,11 +5,15 @@ import java.util.*;
 public class Main {
     final static Scanner  input = new Scanner(System.in);
     public static void main(String[] args) throws Exception{
+        // let the user choose which language will be used
         String lang = getLanguage();
+        // read the properties file depending on the user's choice
         Properties properties = new Properties();
         BufferedReader br = new BufferedReader(new FileReader("D:\\Intllij Projects\\Java Course Laps\\files\\menu_"+lang+".txt"));
         properties.load(br);
+        // show the menu with the chosen language
         showMenu(properties);
+        // closing the file for saving resources
         br.close();
     }
 
