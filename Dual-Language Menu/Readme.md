@@ -14,6 +14,7 @@ This Java application displays a menu in two different languages based on user s
 #### English Menu
 ![1](https://github.com/user-attachments/assets/0a902da9-6e65-4983-b68f-c52e2de50480)
 #### Arabic Menu
-![2](https://github.com/user-attachments/assets/fe062e0d-0f3d-4e5e-93da-5e839b38c294)
+![2](https://github.com/user-attachments/assets/28cea3d3-95d1-4fa3-a34b-6e7a699b81f5)
+
 
 
