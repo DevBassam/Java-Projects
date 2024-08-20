@@ -18,9 +18,9 @@ public class Main {
     }
 
     private static void showMenu(Properties p) {
-        System.out.println("\t\tMain Course");
+        System.out.println("\t\t"+p.getProperty("main_course"));
         showItems(getTheItems(p,"main_course_items"));
-        System.out.println("\t\tSides");
+        System.out.println("\t\t"+p.getProperty("sides"));
         showItems(getTheItems(p,"sides_items"));
     }
     private static String[][] getTheItems(Properties p, String key) {
