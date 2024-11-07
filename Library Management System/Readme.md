@@ -1,7 +1,3 @@
-Here's the updated README with added sections to reflect the latest updates to your project:
-
----
-
 # Library Management System
 
 Welcome to the **Library Management System**! This Java-based application is designed to streamline the management of library resources, including books, members, and loans. Built with a focus on Object-Oriented Programming (OOP) and the Singleton design pattern, the system is structured to be efficient, scalable, and easy to use.
