@@ -12,9 +12,6 @@ Welcome to the **Library Management System**! This Java-based application is des
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ---
 
 ## Overview
