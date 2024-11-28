@@ -104,8 +104,3 @@ Each class follows OOP principles and implements the Singleton pattern where app
 ## Usage
 
 Use the command-line interface to interact with the system. Follow prompts for book management, member registration, loan operations, and more.
-
----
-Feel free to explore the [issues page](https://github.com/DevBassam/Java-OOP-Projects/issues) for open requests or suggestions.
-
----
