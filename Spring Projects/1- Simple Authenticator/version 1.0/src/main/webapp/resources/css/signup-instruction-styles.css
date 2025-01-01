@@ -1,0 +1,64 @@
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .requirements-container {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .requirement-item {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .requirement-label {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .requirement-text {
+            color: #e57373;
+            padding-left: 1.5rem;
+        }
+
+        .signup-link {
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .signup-button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .signup-button:hover {
+            background-color: #1557b0;
+        }
